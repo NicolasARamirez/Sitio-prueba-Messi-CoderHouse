@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MESSI</title>
 	<link rel="shortcut icon" href="../assets/img/logo.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -21,10 +22,10 @@
 				<li><a href="#">Contacto</a></li>
 			</ul>
 		</nav>
-		<header class="header">
+		<header class="header animate__animated animate__bounce">
 			<h1 class="titulo">MESSI MI BUEN AMIGO</h1>
 		</header>
-			<form action="respuesta.html">
+			<form action="respuesta.html" class="animate__animated animate__jackInTheBox">
 				<label for="Nombre">
 					<span>Nombre:</span>
 					<input type="text" placeholder="Nombre">
@@ -45,15 +46,20 @@
 			</form>
 			<div class="imgIg">
 				<img src="../assets/img/instagram.png" alt="Logo instagram">
-				<a href="https://www.instagram.com/mundomessista_/">@mundomessista_</a>
+				<a href="https://www.instagram.com/mundomessista_/" class="animate__animated animate__rotateInDownRight">@mundomessista_</a>
 			</div>
 			<div class="imgTw">
 				<img src="../assets/img/twitter.png" alt="Logo twitter">
-				<a href="https://twitter.com/mundomessista_">@mundomessista_</a>
+				<a href="https://twitter.com/mundomessista_" class="animate__animated animate__rotateInDownLeft">@mundomessista_</a>
 			</div>
 		<footer class="footer">
 			<h4>DERECHOS</h4>
 			<h4>CONTACTO</h4>
 		</footer>
+
+		<script src="../js/wow.min.js"></script>
+	<script>
+	   new WOW().init();
+	</script>
 </body>
 </html>

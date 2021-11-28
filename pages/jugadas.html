@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MESSI</title>
 	<link rel="shortcut icon" href="../assets/img/logo.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -21,21 +22,26 @@
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
-		<header class="header">
+		<header class="header animate__animated animate__bounce">
 			<h1 class="titulo">MESSI MI BUEN AMIGO</h1>
 		</header>
 			<div class="golesBarcelona">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/a1-iff3lh2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2>TODOS SUS GOLES EN BARCELONA</h2>
+				<h2 class="animate__animated animate__slideInLeft">TODOS SUS GOLES EN BARCELONA</h2>
 			</div>
 			<div class="golesSeleccion">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/T-IFdRTkV0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<h2>TODOS SUS GOLES EN LA SELECCION ARGENTINA</h2>
+				<h2 class="animate__animated animate__slideInLeft">TODOS SUS GOLES EN LA SELECCION ARGENTINA</h2>
 			</div>
 		<footer class="footer">
 			<h4>DERECHOS</h4>
 			<h4>RRSS</h4>
 			<h4>CONTACTO</h4>
 		</footer>
+
+		<script src="../js/wow.min.js"></script>
+	<script>
+	   new WOW().init();
+	</script>
 </body>
 </html>
