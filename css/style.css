@@ -1,0 +1,618 @@
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background: blueviolet;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	transition: color .5s;
+}
+
+.navBar li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.navBar li a{
+	color: white;
+}
+
+.navBar li a:hover{
+	color: black;
+}
+
+/*VISTA MOBILE*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	/*INDEX*/
+	.gridContenedorPadreIndex{
+		display: grid;
+		grid-template-areas:
+		"logo"
+		"nav"
+		"header"
+		"txt"
+		"img"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 210px 143px 120px 154px 206px;
+	}
+
+	.logo{
+		grid-area: logo;
+		display: flex;
+		justify-content: center;
+		background: yellow;
+	}
+
+	.nav{
+		grid-area: nav;
+		background: red;
+	}
+
+	.navBar{
+		padding: 20px;
+	}
+
+	.header{
+		grid-area: header;
+		background: white;
+	}
+
+	.titulo{
+		text-align: center;
+		color: turquoise;
+		padding: 30px;
+	}
+
+	.imgIndex{
+		grid-area: img;
+		height: 200px;
+		display: flex;
+		justify-content: center;
+		margin: 5px;
+	}
+
+	.footer{
+		grid-area: footer;
+		background: blue;
+		display: flex;
+		justify-content: space-around;
+		height: 50px;
+		padding: 20px;
+	}
+
+	.footer h4{
+		color: white;
+	}
+
+	.txt{
+		color: black;
+		text-align: center;
+		font-size: 15px;
+		background: white;
+		margin: 5px;
+		padding: 10px;
+		margin-top: 20px;
+	}
+
+	.imgPrincipal{
+		background: green;
+		height: 100%;
+		width: 100%;
+		margin-top: 10px;;
+		display: flex;
+		justify-content: center;
+	}
+
+ /*SOBRE NOSOTROS*/
+
+ .gridContenedorPadreNosotros{
+	display: grid;
+	grid-template-areas:
+	"logo"
+	"nav"
+	"header"
+	"txt1"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 210px 143px 120px 745px; 
+ }
+
+ .txt1{
+ 	text-align: center;
+ 	color: limegreen;
+ 	font-size: 10px;
+ 	background: darkblue;
+ 	margin: 5px;
+ 	padding: 5px;
+ }
+
+ /*DATOS FUTBOLISTICOS*/
+
+ .gridContenedorPadreDatos{
+ 	display: grid;
+ 	grid-template-areas:
+ 	"logo"
+	"nav"
+	"header"
+	"cont1"
+	"cont2"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 210px 143px 120px 333px 277px;
+ }
+
+ .fotoMessi1{
+ 	grid-area: cont1;
+ }
+
+ .fotoMessi1 img{
+ 	width: 100%;
+ }
+
+ .fotoMessi1 p{
+ 	font-size: 20px;
+ 	background: white;
+ 	padding: 5px;
+ 	text-align: center;
+ }
+
+ .fotoMessi2{
+ 	grid-area: cont2;
+ }
+
+ .fotoMessi2 img{
+ 	width: 100%;
+ }
+
+ .fotoMessi2 p{
+ 	font-size: 20px;
+ 	background: white;
+ 	padding: 5px;
+ 	text-align: center;
+ }
+
+ .logoImg{
+ 	height: 200px;
+ }
+
+/*MEJORES JUGADAS*/
+
+ .gridContenedorPadreJugadas{
+ 	display: grid;
+ 	grid-template-areas:
+ 	"logo"
+	"nav"
+	"header"
+	"barcelona"
+	"seleccion"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 210px 143px 120px 400px 395px;
+ }
+
+ .golesBarcelona{
+ 	grid-area: barcelona;
+ 	margin: 5px;
+ }
+
+ .golesBarcelona h2{
+ 	background: white;
+ 	padding: 5px;
+ 	text-align: center;
+ }
+
+ .golesBarcelona iframe{
+ 	width: 350px;
+ }
+
+ .golesSeleccion{
+ 	grid-area: seleccion;
+ 	margin: 5px;
+ }
+
+ .golesSeleccion h2{
+ 	background: white;
+ 	padding: 5px;
+ 	text-align: center;
+ }
+
+ .golesSeleccion iframe{
+ 	width: 350px;
+ }
+
+ /*CONTACTO*/
+
+ .gridContenedorPadreContacto{
+ 	display: grid;
+ 	grid-template-areas:
+ 	"logo"
+	"nav"
+	"header"
+	"form"
+	"twitter"
+	"instagram"
+	"footer";
+	grid-template-columns: 100%;
+	grid-template-rows: 210px 143px 120px 170px 105px;
+ }
+
+ form{
+ 	grid-area: form;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	background: green;
+ }
+
+ .imgIg{
+ 	grid-area: instagram;
+ 	margin: 5px;
+ }
+
+ .imgIg img{
+ 	width: 100px;
+ }
+
+ .imgIg a{
+ 	text-align: center;
+ 	margin: 20px;
+ 	background: white;
+ 	color: black;
+ 	padding: 5px;
+ }
+
+ .imgTw{
+ 	grid-area: twitter;
+ 	margin: 5px;
+ }
+
+ .imgTw img{
+ 	width: 100px;
+ }
+
+ .imgTw a{
+ 	text-align: center;
+ 	margin: 20px;
+ 	background: white;
+ 	color: black;
+ 	padding: 5px;
+ }
+
+ /*RESPUESTA CONTACTO*/
+
+ .gridContenedorPadreRespuesta{
+ 	display: grid;
+		grid-template-areas:
+		"logo"
+		"nav"
+		"header"
+		"respuesta"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 210px 143px 120px 250px;
+ }
+
+ .mensaje{
+ 	grid-area: respuesta;
+ 	background: white;
+ 	margin: 10px;
+ }
+
+ .mensaje h1{
+ 	text-align: center;
+ }
+}
+
+
+
+
+
+
+/*VISTA DESKTOP*/
+@media only screen and (min-width: 1024px){
+
+	/*INDEX*/
+	.gridContenedorPadreIndex{
+		display: grid;
+		width: 100%;
+        height: 250px;
+		grid-template-areas: 
+		"logo nav"
+		"header header"
+		"txt img"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 515px 123px;
+	}
+
+	.logo{
+		grid-area: logo;
+		background: yellow;
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav{
+		grid-area: nav;
+		background: red;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.header{
+		grid-area: header;
+		background: lightblue;
+	}
+
+	.titulo{
+		text-align: center;
+		color: turquoise;
+		padding: 20px;
+	}
+
+	.imgIndex{
+		grid-area: img;
+	}
+
+	.imgPrincipal{
+		background: green;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.txt{
+		grid-area: txt;
+		background: white;
+		width: 674px;
+		margin-top: 140px;	
+	}
+
+	.txt p{
+		text-align: center;
+		padding: 50px;
+		font-size: 20px;
+	}
+
+	.footer{
+		grid-area: footer;
+		background: darkblue;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.footer h4{
+		padding: 10px;
+		margin: 50px;
+		color: white;
+	}
+
+	.logoImg{
+		height: 100px;
+	}
+
+	.navBar{
+		padding: 35px;
+	}
+
+	/*SOBRE NOSOTROS*/
+
+	.gridContenedorPadreNosotros{
+		display: grid;
+		grid-template-areas:
+		"logo nav"
+		"header header"
+		"txt1 txt1"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 800px;
+	}
+
+	.txt1{
+		grid-area: txt1;
+		background: white;
+		font-size: 20px;
+		margin: 10px;
+		padding: 10px;
+	}
+
+	/*DATOS FUTBOLISTICOS*/
+
+	.gridContenedorPadreDatos{
+		display: grid;
+		grid-template-areas:
+		"logo nav"
+		"header header"
+		"cont1 cont1"
+		"cont2 cont2"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 800px;
+	}
+
+	.fotoMessi1{
+		grid-area: cont1;
+		display: flex;
+		justify-content: center;
+	}
+
+	.img1{
+		width: 100%;
+	}
+
+	.txtCarrera{
+		font-size: 20px;
+		background: white;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.fotoMessi2{
+		grid-area: cont2;
+		display: flex;
+		justify-content: center;
+	}
+
+	.img2{
+		width: 100%;
+	}
+
+	.fotoMessi2 p{
+		font-size: 20px;
+		background: white;
+		text-align: center;
+		padding: 10px;
+	}
+
+	/*MEJORES JUGADAS*/
+
+	.gridContenedorPadreJugadas{
+		display: grid;
+		grid-template-areas:
+		"logo nav"
+		"header header"
+		"barcelona barcelona"
+		"seleccion seleccion"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 375px;
+	}
+
+	.golesBarcelona{
+		grid-area: barcelona;
+		margin: 10px;
+	}
+
+	.golesBarcelona iframe{
+		width: 100%;
+	}
+
+	.golesBarcelona h2{
+		background: white;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.golesSeleccion{
+		grid-area: seleccion;
+		margin: 10px;
+	}
+
+	.golesSeleccion iframe{
+		width: 100%;
+	}
+
+	.golesSeleccion h2{
+		background: white;
+		text-align: center;
+		padding: 10px;
+	}
+
+	/*CONTACTO*/
+
+	.gridContenedorPadreContacto{
+		display: grid;
+		grid-template-areas:
+		"logo nav"
+		"header header"
+		"form form"
+		"instagram instagram"
+		"twitter twitter"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 150px 530px;
+	}
+
+	form{
+		grid-area: form;
+		display: flex;
+		flex-direction: column;
+		background: green;
+		justify-content: center;
+	}
+
+	label{
+		display: flex;
+		justify-content: center;
+	}
+
+	.imgIg{
+		grid-area: instagram;
+		margin: 10px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.imgIg img{
+		width: 500px;
+	}
+
+	.imgIg a{
+		background: white;
+		padding: 10px;
+		font-size: 20px;
+		color: black;
+		transition: color .5s;
+	}
+
+	.imgTw{
+		grid-area: twitter;
+		margin: 10px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.imgTw img{
+		width: 500px;
+	}
+
+	.imgTw a{
+		font-size: 20px;
+		padding: 10px;
+		background: white;
+		color: black;
+		transition: color .5s;
+	}
+
+	.imgTw a:hover{
+		color: red;
+	}
+
+	.imgIg a:hover{
+		color: red;
+	}
+
+	/*RESPUESTA CONTACTO*/
+
+	.gridContenedorPadreRespuesta{
+		display: grid;
+		grid-template-areas:
+		"logo nav"
+		"header header"
+		"mensaje mensaje"
+		"footer footer";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px 77px 420px;
+	}
+
+	.mensaje{
+		grid-area: mensaje;
+		background: lightblue;
+		text-align: center;
+		margin: 100px;
+		padding: 20px;
+	}
+}
