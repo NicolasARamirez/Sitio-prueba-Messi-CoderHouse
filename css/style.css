@@ -37,9 +37,6 @@
     text-align: center;
 }
 
-.imgNosotros{
-	height: 400px;
-}
 
 .row1{
 	display: -ms-flexbox;
@@ -63,14 +60,79 @@
 	text-align: center;
 }
 
+.row2{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 170px;
+    margin-bottom: 200px;
+}
+
+.bg-yellowgreen{
+	background: yellowgreen;
+}
+
+.center{
+	text-align: center;
+}
+
+iframe{
+	margin-left: 290px;
+	margin-bottom: 20px;
+	margin-top: 70px;
+}
+
+.h2Jugadas{
+	margin-bottom: 30px;
+}
+
+.h2{
+	padding: 20px;
+}
+
+.bg-gray{
+	background: gray;
+}
+
+.imgC{
+	height: 735px;
+	margin-left: 195px;
+}
+
+.h1R{
+	margin-top: 400px;
+	margin-bottom: 329px;
+}
 @media only screen and (min-width: 0px) and (max-width: 768px){
 	.img-principal{
-		height: 288px;
-		margin: 18px;
+		height: 280px;
+		margin-left: 25px;
+        margin-bottom: 10px;
 	}
-
 	.imgNosotros{
 		height: 70%;
+	}
+
+	.datosCard{
+		margin-left: 20px;
+	}
+
+	iframe{
+    margin-bottom: 34px;
+    margin-top: 20px;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+	}
+
+	.imgC{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 25px;
+		height: 280px;
 	}
 }
 
@@ -78,10 +140,31 @@
 	.navbar-expand-lg .navbar-collapse {
 	display: flex!important;
 	flex-basis: auto;
-	justify-content: flex-end;
-}
+	justify-content: flex-end;}
 
-.img-principal{
+	.txt-principal{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.img-principal{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.txtNosotros{
+		margin-bottom: 100px;
+		margin-top: 89px;
+	}
+    
+    .imgNosotros{
+	height: 400px;
+ }
+
+ .img-principal{
 	height: 541px;
 }
+
 }
+
+
